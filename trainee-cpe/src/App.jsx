@@ -1,8 +1,9 @@
+import Cadastro from "./Pages/Cadastro/Cadastro"
 
 function App() {
   return (
     <div>
-      olá mundooooooooooooooooooo
+      <Cadastro/>
     </div>
   )
 }
