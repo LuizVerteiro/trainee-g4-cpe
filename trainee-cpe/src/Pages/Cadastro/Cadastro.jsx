@@ -1,10 +1,13 @@
+import { DivBackground, DivTeste } from "./Styles";
+
 function Cadastro(){
 
 
     return(
         <div>
-            Chega de tristeza amor
+            <body>
             
+            </body>
         </div>
     )
 }
