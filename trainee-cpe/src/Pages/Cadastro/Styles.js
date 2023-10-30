@@ -1,26 +1,34 @@
 import styled from "styled-components";
 
-export const DivTeste = styled.div`
-    /* width: 100%;
-    height: 20px;
-    margin-top: 10px;
-    border: snow;
-    background-color: yellow; */
-    
+export const DivHeader = styled.div`
+    width:100%;
+    height: 340px;
+    background: linear-gradient(to bottom, #DE3100, black);
+    border: none;
+`
+export const DivBackground = styled.div`
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    border: none;
 
 `
-export const body = styled.div`
- display: table;
- 
+export const DivLogo = styled.div`
+    padding-left: 401px;
+    width: 208px;
+    height: 146px;
+    padding-top: 21px;
+`
+export const DivText = styled.div`
+    padding-left: 208px;
+    margin-top: -85px;
+    font-family: 'Monteserrat';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    color: #FFF;
+`
+export const DivButtonEntrar = styled.div`
+
 
 `
-// export const DivBackground = styled.div`
-//     width: 105%;
-//     height: 1024px;
-//     background-color: orangered;
-//     border: none;
-//     margin-top: -10px;
-//     margin-left: -8px;
-//     margin-right: -30px;
-
-// `
