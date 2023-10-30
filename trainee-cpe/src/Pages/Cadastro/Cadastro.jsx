@@ -1,25 +1,31 @@
-import { DivHeader, DivLogo, DivBackground, DivText, DivButtonEntrar} from "./Styles";
+import { DivHeader, DivLogo, DivBackground, DivText, DivButtonEntrar, DivCadastro} from "./Styles";
 import ImageLogo from "./Images/Logo.png";
 
 function Cadastro(){
 
 
     return(
-        <div>
+        <>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;500;800&display=swap" rel="stylesheet"/>
             <DivBackground> 
                 <DivHeader>
                     <DivLogo>
                     <img src={ImageLogo} alt = "Logo" />
                     <DivText>
-                    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-                    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;500;800&display=swap" rel="stylesheet"/>
                     Assistec
                     </DivText>
-                    </DivLogo>
+                    </DivLogo> 
+                    <DivButtonEntrar>
+                        Entrar
+                    </DivButtonEntrar>  
+                    <DivCadastro>
+                        Cadastro
+                    </DivCadastro>
                 </DivHeader>
             </DivBackground>
-        </div>
+        </>
     );
 }
 

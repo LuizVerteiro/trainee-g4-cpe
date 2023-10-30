@@ -29,6 +29,40 @@ export const DivText = styled.div`
     color: #FFF;
 `
 export const DivButtonEntrar = styled.div`
-
-
+    width: 140px;
+    height: 53px;
+    border-radius: 5px;
+    padding: 10px 41px 10px 42px;
+    border: 2px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80%;
+    margin-top: -90px;
+    font-size:18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 1.5px
+`
+export const DivCadastro = styled.div`
+    width: 140px;
+    height: 53px;
+    border-radius: 5px;
+    padding: 10px 41px 10px 42px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90%;
+    margin-top: -73px;
+    font-size:18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #FFF;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 1.5px
 `
