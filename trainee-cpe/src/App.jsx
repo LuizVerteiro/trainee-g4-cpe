@@ -1,14 +1,9 @@
-import Editar_perfil from "./Pages/Editar_perfil/Editar_perfil"
-import Cadastro from "./Pages/Cadastro/Cadastro"
-import GlobalStyles from "./Styles/GlobalStyles"
-
-
+import Routes from "./routes"
 function App() {
   return (
-    <>
-      <GlobalStyles/>
-      <Cadastro/>
-    </>
+    <div>
+      <Routes/>
+    </div>
   )
 }
 
