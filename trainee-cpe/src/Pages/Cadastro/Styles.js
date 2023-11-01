@@ -10,8 +10,6 @@ export const DivBackground = styled.div`
     width: 100%;
     height: 100vh;
     background-color: black;
-    border: none;
-
 `
 export const DivLogo = styled.div`
     padding-left: 401px;
@@ -64,5 +62,5 @@ export const DivCadastro = styled.div`
     color: #FFF;
     font-weight: 400;
     line-height: 33px;
-    letter-spacing: 1.5px
+    letter-spacing: 1.5px;
 `
