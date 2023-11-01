@@ -17,5 +17,5 @@ const router = createBrowserRouter(
     )
 )
 export default function Routes(){
-    return <RouterProvider router = {router}/>
+    return <Routerprovider router = {router}/>
 }
