@@ -1,8 +1,15 @@
+import { Container } from "./Styles";
+
 function Home() {
     return (
-        <div>
-            Essa é a página home
-        </div>
+        <Container>
+            <div>
+              Essa é a página home  
+            </div>
+            <button>
+                Login 
+            </button>
+        </Container>
     );
 
 
