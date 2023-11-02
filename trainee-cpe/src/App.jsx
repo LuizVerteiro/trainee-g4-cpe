@@ -1,12 +1,13 @@
-import Cadastro from "./Pages/Cadastro/Cadastro"
-import Home from "./Pages/Home/Home"
 import Routes from "./routes"
+import Header from "./Components/Header"
+import GlobalStyles from "./Styles/GlobalStyles"
 function App() {
   return (
     <div>
-      <Routes/>
+      <Routes />
     </div>
   )
 }
 
 export default App
+
