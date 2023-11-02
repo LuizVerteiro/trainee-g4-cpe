@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+<<<<<<< HEAD
 export const GlobalStyles = createGlobalStyle`
 *{
     max-width:100%
@@ -10,4 +11,9 @@ html, body{
         font-size: 11px
     }
 }
+=======
+export default createGlobalStyle`
+*{max-width:100%}
+body{margin:0};
+>>>>>>> luiz-branch
 `
