@@ -1,10 +1,10 @@
-function Home(){
+function Home() {
     return (
-<div>
-    Essa é apágina home
-</div>
-    )
+        <div>
+            Essa é a página home
+        </div>
+    );
 
-    
+
 }
 export default Home;

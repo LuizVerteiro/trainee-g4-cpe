@@ -4,11 +4,10 @@ import GlobalStyles from "./Styles/GlobalStyles"
 function App() {
   return (
     <div>
-      <GlobalStyles/>
-      <Header/>
-      <Routes/>
+      <Routes />
     </div>
   )
 }
 
 export default App
+

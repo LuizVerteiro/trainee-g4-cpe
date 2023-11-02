@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyles } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 *{
     max-width:100%
@@ -11,3 +11,4 @@ html, body{
     }
 }
 `
+export default GlobalStyles;
