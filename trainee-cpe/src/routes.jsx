@@ -10,8 +10,8 @@ import  Cadastro  from "./Pages/Cadastro/Cadastro";
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route>
-        <Route path="./" element = {<Home/>}/>
-  <Route path="./" element = {<Cadastro/>}/>
+        <Route path="/" element = {<Home/>}/>
+  <Route path="/Cadastro" element = {<Cadastro/>}/>
         </Route>
 
     )

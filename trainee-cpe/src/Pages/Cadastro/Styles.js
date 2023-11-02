@@ -4,7 +4,6 @@ export const DivHeader = styled.div`
     width:100%;
     height: 340px;
     background: linear-gradient(to bottom, #DE3100, black);
-    border: none;
 `
 export const DivBackground = styled.div`
     width: 100%;
