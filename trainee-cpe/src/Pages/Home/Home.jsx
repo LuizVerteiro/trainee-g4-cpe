@@ -1,14 +1,10 @@
-import { Container, DivFundo } from "./Styles";
-import { DivHeader } from "../Cadastro/Styles";
+import { Container } from "./Styles";
 
 function Home() {
   return (
-    <DivFundo>
+    <Container>
       <div>Essa é a página home</div>
-      <DivaHeader>
-        
-      </DivaHeader>
-    </DivFundo>
+    </Container>
   );
 }
 export default Home;
