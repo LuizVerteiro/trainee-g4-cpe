@@ -7,3 +7,13 @@ export const Container = styled.div`
   height: 80rem;
   color: white;
 `;
+
+export const DivText = styled.div`
+  padding-left: 0px;
+  margin-top: 0px;
+  font-family: "Monteserrat";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+`;
