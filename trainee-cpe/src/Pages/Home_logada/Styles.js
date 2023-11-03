@@ -25,3 +25,15 @@ export const DivLogo = styled.div`
   height: 146px;
   padding-top: 30px;
 `;
+
+export const DivAvisos = styled.div`
+  display: flex;
+  flex-direction: column;
+  border-top: 30px;
+  border-right: 40px;
+  border-left: 48px;
+  padding: 40px 73px 0px 60px;
+  height: 50px;
+  width: 100px;
+  border: 1px solid #fff;
+`;

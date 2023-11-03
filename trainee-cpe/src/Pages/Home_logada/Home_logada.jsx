@@ -1,5 +1,5 @@
 import { DivHeader } from "../Cadastro/Styles";
-import { DivLogo } from "./Styles";
+import { DivAvisos, DivLogo } from "./Styles";
 import { DivText } from "./Styles";
 import { Container } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
@@ -13,6 +13,8 @@ function Home_logada() {
           <DivText>Assistec</DivText>
         </DivLogo>
       </DivHeader>
+
+      <DivAvisos></DivAvisos>
     </Container>
   );
 }
