@@ -4,8 +4,11 @@ import { DivLogo } from "../Cadastro/Styles";
 import { DivText } from "./Styles";
 
 function Home() {
-  return (
-    <Container>
+  return <div>Ola</div>;
+}
+export default Home;
+
+/*<Container>
       <DivHeader>
         <DivLogo>
           <DivText>
@@ -13,7 +16,4 @@ function Home() {
           </DivText>
         </DivLogo>
       </DivHeader>
-    </Container>
-  );
-}
-export default Home;
+    </Container>*/
