@@ -1,7 +1,15 @@
 import { DivHeader } from "../Cadastro/Styles";
-import { DivAvisos, DivLogo } from "./Styles";
-import { DivText } from "./Styles";
-import { Container } from "./Styles";
+import {
+  DivAvisos,
+  DivLogo,
+  DivText,
+  Container,
+  DivOla,
+  OlaTexto,
+  Login,
+  Linha,
+  DivAjuda,
+} from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 
 function Home_logada() {
@@ -13,8 +21,15 @@ function Home_logada() {
           <DivText>Assistec</DivText>
         </DivLogo>
       </DivHeader>
+      <DivOla>
+        <OlaTexto>Olá Taylor Swift!</OlaTexto>
+        <Login> Login </Login>
+      </DivOla>
 
-      <DivAvisos></DivAvisos>
+      <Linha>
+        <DivAvisos>oi</DivAvisos>
+        <DivAjuda>Oiiiiiiiii</DivAjuda>
+      </Linha>
     </Container>
   );
 }
