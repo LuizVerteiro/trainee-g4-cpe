@@ -24,4 +24,7 @@ export const DivLogo = styled.div`
   width: 208px;
   height: 146px;
   padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;

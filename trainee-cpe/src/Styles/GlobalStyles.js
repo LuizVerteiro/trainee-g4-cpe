@@ -4,7 +4,8 @@ export const GlobalStyles = createGlobalStyle`
     max-width:100%
 }
 html, body{
-    margin:0;
+    
+     margin:0;
     font-size: 15px;
     background-color: black;
     color: white;
