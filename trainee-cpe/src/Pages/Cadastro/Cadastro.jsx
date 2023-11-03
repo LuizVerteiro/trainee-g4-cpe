@@ -6,7 +6,7 @@ function Cadastro() {
     return (
         <>
             <DivBackground>
-                <Header/>
+                {/* <Header/> */}
                 <DivHeader>
                     <DivLogo>
                         <img src={ImageLogo} alt="Logo" />

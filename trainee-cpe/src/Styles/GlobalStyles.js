@@ -10,4 +10,6 @@ html, body{
         font-size: 11px
     }
 }
-`
+`;
+export default GlobalStyles;
+
