@@ -6,6 +6,9 @@ export const GlobalStyles = createGlobalStyle`
 html, body{
     margin:0;
     font-size: 15px;
+    background-color: black;
+    color: white;
+    font-family: "Monteserrat";
     @media (max-width: 700px){
         font-size: 11px
     }
