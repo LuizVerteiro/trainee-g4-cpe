@@ -8,7 +8,6 @@ export const DivHeader = styled.div`
 export const DivBackground = styled.div`
     width: 100%;
     height: 100vh;
-    background-color: black;
 `
 export const DivLogo = styled.div`
     padding-left: 401px;
@@ -37,7 +36,6 @@ export const DivButtonEntrar = styled.div`
     margin-left: 80%;
     margin-top: -90px;
     font-size:18px;
-    font-family: 'Montserrat';
     font-style: normal;
     color: #FFF;
     font-weight: 400;
@@ -56,7 +54,6 @@ export const DivCadastro = styled.div`
     margin-left: 90%;
     margin-top: -73px;
     font-size:18px;
-    font-family: 'Montserrat';
     font-style: normal;
     color: #FFF;
     font-weight: 400;

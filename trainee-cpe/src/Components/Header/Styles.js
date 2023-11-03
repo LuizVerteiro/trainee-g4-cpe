@@ -24,9 +24,8 @@ export const DivLogo = styled.div`
 export const DivText = styled.div`
     font-family: 'Monteserrat';
     font-size: 60px;
-
 `
 // export const StyledLink = styled.link`
-
+    
 
 // `

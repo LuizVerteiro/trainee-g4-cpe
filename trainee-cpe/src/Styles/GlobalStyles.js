@@ -8,7 +8,7 @@ html, body{
     font-size: 15px;
     background-color: black;
     color: white;
-    font-family: "Monteserrat";
+    font-family: "Montserrat";
     @media (max-width: 700px){
         font-size: 11px
     }
