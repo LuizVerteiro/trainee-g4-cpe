@@ -3,21 +3,6 @@ import { DivHeader } from "../Cadastro/Styles";
 import { DivLogo } from "../Cadastro/Styles";
 
 function Home() {
-<<<<<<< Updated upstream
-  return <div>Ola</div>;
-}
-export default Home;
-
-/*<Container>
-      <DivHeader>
-        <DivLogo>
-          <DivText>
-            Assistec
-          </DivText>
-        </DivLogo>
-      </DivHeader>
-    </Container>*/
-=======
   return (
     <Container>
       <Firstpart>
@@ -32,4 +17,3 @@ export default Home;
   );
 }
 export default Home;
->>>>>>> Stashed changes
