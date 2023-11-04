@@ -9,7 +9,9 @@ import {
   Login,
   Linha,
   DivAjuda,
+  Tabela,
   DivHeaderTabela,
+  DivCorpoTabela,
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 
@@ -32,11 +34,18 @@ function Home_logada() {
         <DivAjuda>Oiiiiiiiii</DivAjuda>
       </Linha>
 
-      <DivHeaderTabela>
-        <div>Usuário</div>
-        <div>Atividade</div>
-        <div>Tempo ativo</div>
-      </DivHeaderTabela>
+      <Tabela>
+        <DivHeaderTabela>
+          <div>Usuário</div>
+          <div>Atividade</div>
+          <div>Tempo ativo</div>
+        </DivHeaderTabela>
+        <DivCorpoTabela>
+          <div>Usuário 1</div>
+          <div>Escutando Taylor</div>
+          <div>1:08h</div>
+        </DivCorpoTabela>
+      </Tabela>
     </Container>
   );
 }

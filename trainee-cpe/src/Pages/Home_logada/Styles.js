@@ -77,6 +77,8 @@ export const DivAjuda = styled.div`
   border: 1px solid #fff;
 `;
 
+export const Tabela = styled.div``;
+
 export const DivHeaderTabela = styled.div`
   display: flex;
   align-items: center;
@@ -87,5 +89,18 @@ export const DivHeaderTabela = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   margin-left: 30px;
+  justify-content: space-between;
+`;
+
+export const DivCorpoTabela = styled.div`
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  height: 60px;
+  width: 90%;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   justify-content: space-between;
 `;
