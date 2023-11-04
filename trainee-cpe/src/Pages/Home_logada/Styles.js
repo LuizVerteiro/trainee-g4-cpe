@@ -109,3 +109,8 @@ export const divUsuario1 = styled.div`
   display: flex;
   flex-direction: row;
 `;
+
+export const DivManutencao = styled.div`
+  display: flex;
+  color: #bc2900;
+`;

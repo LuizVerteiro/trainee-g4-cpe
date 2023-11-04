@@ -13,6 +13,7 @@ import {
   DivHeaderTabela,
   DivCorpoTabela,
   divUsuario1,
+  DivManutencao,
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 
@@ -44,7 +45,7 @@ function Home_logada() {
         <DivCorpoTabela>
           <divUsuario1>
             <div>Usuário 1</div>
-            <div>Manutenção</div>
+            <DivManutencao>Manutenção</DivManutencao>
           </divUsuario1>
           <div>Escutando Taylor</div>
           <div>1:08h</div>
