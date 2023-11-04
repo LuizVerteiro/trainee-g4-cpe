@@ -50,6 +50,8 @@ export const DivOla = styled.div`
 `;
 
 export const Login = styled.button`
+  color: #a72500;
+  background-color: #000000;
   border: 1px solid #a72500;
   margin-right: 2rem;
 `;
