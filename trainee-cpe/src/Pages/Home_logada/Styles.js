@@ -76,3 +76,16 @@ export const DivAjuda = styled.div`
   width: 45%;
   border: 1px solid #fff;
 `;
+
+export const DivHeaderTabela = styled.div`
+  display: flex;
+  align-items: center;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 90%;
+  margin-top: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 30px;
+  justify-content: space-between;
+`;
