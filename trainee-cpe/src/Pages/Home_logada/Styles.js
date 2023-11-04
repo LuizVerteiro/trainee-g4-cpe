@@ -104,3 +104,8 @@ export const DivCorpoTabela = styled.div`
   padding-right: 30px;
   justify-content: space-between;
 `;
+
+export const divUsuario1 = styled.div`
+  display: flex;
+  flex-direction: row;
+`;

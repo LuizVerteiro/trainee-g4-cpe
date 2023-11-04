@@ -12,6 +12,7 @@ import {
   Tabela,
   DivHeaderTabela,
   DivCorpoTabela,
+  divUsuario1,
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 
@@ -41,7 +42,10 @@ function Home_logada() {
           <div>Tempo ativo</div>
         </DivHeaderTabela>
         <DivCorpoTabela>
-          <div>Usuário 1</div>
+          <divUsuario1>
+            <div>Usuário 1</div>
+            <div>Manutenção</div>
+          </divUsuario1>
           <div>Escutando Taylor</div>
           <div>1:08h</div>
         </DivCorpoTabela>
