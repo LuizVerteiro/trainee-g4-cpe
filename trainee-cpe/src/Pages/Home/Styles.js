@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   height: 80rem;
   color: white;
@@ -26,27 +26,40 @@ export const ButtonEntrar = styled.div`
   padding: 2px;
   font-size: 50px;
   display: flex;
-  width: 200px;
-  height: 64px;
-  padding: 10px 39px;
+  max-width: 200px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0;
+  @media (max-width:1200px){
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  padding: 12px 12px 12px 12px;
+ };
 `;
 export const Title = styled.div`
-padding: 200px;
+color: #FFF;
+white-space: nowrap;
+padding: 100px;
 font-family: Montserrat;
-font-size: 64px;
+font-size: 40px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+ @media (max-width:1200px){
+  font-size: 25px;
+ };
 `;
 export const Firstpart = styled.div`
+  width: 50%;
   justify-content: center;
   align-items: center;
   display:flex;
-  margin-right:50px;
+  margin-right: 2%;
   flex-direction: column;
+  @media (max-width:1500px){
+ };
 `;
 export const SecondPart = styled.div`
 justify-content: center;
@@ -61,18 +74,29 @@ text-align:center;
 padding: 2px;
 font-size: 50px;
 display: flex;
-width: 344px;
-height: 64px;
-padding: 10px 36px 10px 39px;
+max-width: 200px;
+height: auto;
+padding: 10px 10px 10px 10px;
 justify-content: center;
 align-items: center;
+@media (max-width:1200px){
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  padding: 12px 12px 12px 12px;
+ };
 `;
 export const Title2 = styled.div`
-  padding: 200px;
+  white-space: nowrap;
+  padding: 100px;
   color: #FFF;
   font-family: Montserrat;
-  font-size: 64px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  @media (max-width:1200px){
+  font-size: 25px;
+
+ };
 `;
