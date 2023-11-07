@@ -10,14 +10,32 @@ import {
   Linha,
   DivAjuda,
   Tabela,
-  DivHeaderTabela,
-  DivCorpoTabela,
-  divUsuario1,
-  DivManutencao,
+  HeaderTabela,
+  LinhaTabela,
+  Usuario,
+  Cargo,
+  Atividade,
+  Nome,
+  TempoAtivo,
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 
 function Home_logada() {
+  const seções = [
+    {
+      nome: "Mateus",
+      cargo: "Manutenção",
+      atividade: "Monitoria",
+      tempoAtivo: "01:08",
+    },
+
+    {
+      nome: "Isabel",
+      cargo: "Atendimento ao cliente",
+      atividade: "Estudando",
+      tempoAtivo: "03:18",
+    },
+  ];
   return (
     <Container>
       <DivHeader>
@@ -37,19 +55,23 @@ function Home_logada() {
       </Linha>
 
       <Tabela>
-        <DivHeaderTabela>
+        <HeaderTabela>
           <div>Usuário</div>
           <div>Atividade</div>
           <div>Tempo ativo</div>
-        </DivHeaderTabela>
-        <DivCorpoTabela>
-          <divUsuario1>
-            <div>Usuário 1</div>
-            <DivManutencao>Manutenção</DivManutencao>
-          </divUsuario1>
-          <div>Escutando Taylor</div>
-          <div>1:08h</div>
-        </DivCorpoTabela>
+        </HeaderTabela>
+        {seções.map(function (seção) {
+          return (
+            <LinhaTabela>
+              <Usuario>
+                <Nome>{seção.nome}</Nome>
+                <Cargo>{seção.cargo}</Cargo>
+              </Usuario>
+              <Atividade>{seção.atividade}</Atividade>
+              <TempoAtivo>{seção.tempoAtivo}</TempoAtivo>
+            </LinhaTabela>
+          );
+        })}
       </Tabela>
     </Container>
   );

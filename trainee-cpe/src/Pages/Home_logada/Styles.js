@@ -79,38 +79,52 @@ export const DivAjuda = styled.div`
 
 export const Tabela = styled.div``;
 
-export const DivHeaderTabela = styled.div`
+export const HeaderTabela = styled.div`
   display: flex;
   align-items: center;
   border: 1px solid #fff;
   height: 40px;
-  width: 90%;
+  width: 80%;
   margin-top: 40px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin-left: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
   justify-content: space-between;
 `;
 
-export const DivCorpoTabela = styled.div`
+export const LinhaTabela = styled.div`
   display: flex;
   align-items: center;
   border: 1px solid #fff;
   height: 60px;
-  width: 90%;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   justify-content: space-between;
 `;
 
-export const divUsuario1 = styled.div`
+export const Usuario = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 60%;
 `;
 
-export const DivManutencao = styled.div`
+export const Cargo = styled.div`
   display: flex;
   color: #bc2900;
+`;
+
+export const Atividade = styled.div`
+  width: 60%;
+`;
+
+export const Nome = styled.div`
+  width: 60%;
+`;
+
+export const TempoAtivo = styled.div`
+  width: 60%;
 `;
