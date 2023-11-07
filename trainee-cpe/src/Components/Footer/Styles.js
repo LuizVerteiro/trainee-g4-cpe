@@ -5,17 +5,26 @@ export const DivBackground = styled.div`
   width: 100%;
   height: 150px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 `;
 
 export const Texto = styled.div`
+  padding-top: 2rem;
   display: flex;
   align-items: center;
   color: #fff;
   text-align: center;
   font-family: Montserrat;
-  font-size: 36px;
+  font-size: 2rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+`;
+
+export const Logos = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
