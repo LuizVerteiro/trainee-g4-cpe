@@ -11,6 +11,9 @@ import {
   DivAjuda,
   Tabela,
   HeaderTabela,
+  UsuarioHeader,
+  AtividadeHeader,
+  TempoHeader,
   LinhaTabela,
   Usuario,
   Cargo,
@@ -18,8 +21,10 @@ import {
   Nome,
   TempoAtivo,
   Texto,
+  NomeCargo,
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
+import { LogoutOutlined } from "@ant-design/icons";
 
 function Home_logada() {
   const seções = [
@@ -32,7 +37,7 @@ function Home_logada() {
 
     {
       nome: "Isabel",
-      cargo: "Atendimento ao cliente",
+      cargo: "Atendimento",
       atividade: "Estudando",
       tempoAtivo: "03:18",
     },
@@ -69,19 +74,25 @@ function Home_logada() {
 
       <Tabela>
         <HeaderTabela>
-          <div>Usuário</div>
-          <div>Atividade</div>
-          <div>Tempo ativo</div>
+          <UsuarioHeader>Usuário</UsuarioHeader>
+          <AtividadeHeader>Atividade</AtividadeHeader>
+          <TempoHeader>Tempo ativo</TempoHeader>
         </HeaderTabela>
         {seções.map(function (seção) {
           return (
             <LinhaTabela>
               <Usuario>
-                <Nome>{seção.nome}</Nome>
-                <Cargo>{seção.cargo}</Cargo>
+                <img href="" />
+                <NomeCargo>
+                  <Nome>{seção.nome}</Nome>
+                  <Cargo>{seção.cargo}</Cargo>
+                </NomeCargo>
               </Usuario>
               <Atividade>{seção.atividade}</Atividade>
-              <TempoAtivo>{seção.tempoAtivo}</TempoAtivo>
+              <TempoAtivo>
+                {seção.tempoAtivo}
+                <LogoutOutlined style={{ color: "#EF3500" }} />
+              </TempoAtivo>
             </LinhaTabela>
           );
         })}

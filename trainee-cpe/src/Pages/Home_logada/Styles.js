@@ -124,7 +124,25 @@ export const HeaderTabela = styled.div`
   padding-right: 5%;
   margin-left: 5%;
   margin-right: 5%;
-  justify-content: space-between;
+  justify-content: center;
+`;
+
+export const UsuarioHeader = styled.div`
+  display: flex;
+  width: 33%;
+  justify-content: center;
+`;
+
+export const AtividadeHeader = styled.div`
+  display: flex;
+  width: 33%;
+  justify-content: center;
+`;
+
+export const TempoHeader = styled.div`
+  display: flex;
+  width: 33%;
+  justify-content: center;
 `;
 
 export const LinhaTabela = styled.div`
@@ -142,8 +160,17 @@ export const LinhaTabela = styled.div`
 
 export const Usuario = styled.div`
   display: flex;
+  width: 33%;
+  gap: 5%;
+  justify-content: center;
+  img {
+    width: 10%;
+  }
+`;
+
+export const NomeCargo = styled.div`
+  display: flex;
   flex-direction: column;
-  width: 60%;
 `;
 
 export const Cargo = styled.div`
@@ -152,13 +179,18 @@ export const Cargo = styled.div`
 `;
 
 export const Atividade = styled.div`
-  width: 60%;
+  display: flex;
+  width: 33%;
+  justify-content: center;
 `;
 
 export const Nome = styled.div`
-  width: 60%;
+  width: 33%;
 `;
 
 export const TempoAtivo = styled.div`
-  width: 60%;
+  display: flex;
+  width: 33%;
+  gap: 5%;
+  justify-content: center;
 `;
