@@ -28,16 +28,6 @@ export const DivLogo = styled.div`
   padding-top: 30px;
 `;
 
-export const DivAvisos = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  border-top: 10px;
-  height: auto;
-  width: 35%;
-  border: 1px solid #fff;
-`;
-
 export const DivOla = styled.div`
   display: flex;
   flex-direction: row;
@@ -46,37 +36,81 @@ export const DivOla = styled.div`
   align-items: center;
   justify-content: end;
   text-align: start;
-  gap: 30%;
+  gap: 32%;
 `;
 
 export const Login = styled.button`
   color: #a72500;
   background-color: #000000;
   border: 1px solid #a72500;
+  font-weight: 500;
   margin-right: 2rem;
+  font-size: 2rem;
+  width: 108px;
+  height: 37px;
 `;
 
-export const OlaTexto = styled.h1`
+export const Titulo = styled.h1`
   color: white;
   display: flex;
+  text-align: center;
+`;
+
+export const Texto = styled.div`
+  text-align: center;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 `;
 
 export const Linha = styled.div`
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-right: 1rem;
   width: 100%;
-  gap: 40px;
+  height: auto;
+  gap: 3%;
 `;
 
 export const DivAjuda = styled.div`
   display: flex;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: 1rem;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border-top: 10px;
   height: auto;
-  width: 45%;
+  width: 35%;
   border: 1px solid #fff;
 `;
 
+export const DivAvisos = styled.div`
+  display: flex;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  border-left: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  border-top: 10px;
+  height: auto;
+  width: 35%;
+  border: 1px solid #fff;
+`;
 export const Tabela = styled.div``;
 
 export const HeaderTabela = styled.div`

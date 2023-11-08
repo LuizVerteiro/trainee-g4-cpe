@@ -5,7 +5,7 @@ import {
   DivText,
   Container,
   DivOla,
-  OlaTexto,
+  Titulo,
   Login,
   Linha,
   DivAjuda,
@@ -17,6 +17,7 @@ import {
   Atividade,
   Nome,
   TempoAtivo,
+  Texto,
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 
@@ -45,13 +46,25 @@ function Home_logada() {
         </DivLogo>
       </DivHeader>
       <DivOla>
-        <OlaTexto>Olá Taylor Swift!</OlaTexto>
+        <Titulo>Olá Taylor Swift!</Titulo>
         <Login> Login </Login>
       </DivOla>
 
       <Linha>
-        <DivAvisos>oi</DivAvisos>
-        <DivAjuda>Oiiiiiiiii</DivAjuda>
+        <DivAvisos>
+          <Titulo>Avisos</Titulo>
+          <Texto>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae
+            posuere nunc. Etiam lacinia arcu laoreet ligula dictum, at luctus.
+          </Texto>
+        </DivAvisos>
+        <DivAjuda>
+          <Titulo>Precisa de ajuda?</Titulo>
+          <Texto>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae
+            posuere nunc. Etiam lacinia arcu laoreet ligula dictum, at luctus.
+          </Texto>
+        </DivAjuda>
       </Linha>
 
       <Tabela>
