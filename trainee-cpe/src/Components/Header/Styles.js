@@ -1,76 +1,50 @@
 import styled from "styled-components";
+export const DivBackground = styled.div`
+    position: fixed;
+    top:0;
+    left:0;
 
-// export const DivBackground = styled.div`
-//     position: fixed;
-//     top:0;
-//     left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-around;
-
-//     padding-right: 1rem;
-//     padding-left: 1rem;
-//     width: 100%;
-//     height: 22rem;
-//     background: linear-gradient(to bottom, #DE3100, black);
-// `
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+    height: 22rem;
+    background: linear-gradient(to bottom, #DE3100, black);
+`
 export const DivContainner = styled.div`
     display: flex;
     align-items: center;
 
 `
-export const Title = styled.div`
+export const DivLogo = styled.div`
+    width: 14rem;
+    height: 10rem;
+    padding-left: 39rem;
+    
+`
+export const DivText = styled.div`
+    font-family: 'Monteserrat';
+    font-size: 60px;
+`
+export const DivBottons = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    padding-left: 30rem;
+    font-size: 18px;
+`
+export const DivEntrar = styled.div`
+    align-items: center;
 
 `
-export const DivEmail = styled.div`
-
-
-`
-export const Email = styled.div`
-
-`
-export const BoxEmail = styled.div`
-
-`
-export const DivNomeUser = styled.div`
-
-`
-export const NomeUser = styled.div`
-
-`
-export const BoxUser = styled.div`
-
-`
-export const DivSenha = styled.div`
-
-
-`
-export const Senha = styled.div`
-
-`
-export const BoxSenha = styled.div`
-
-`
-export const DivConfirmSenha = styled.div`
-
-`
-export const ConfirmSenha = styled.div`
-
-`
-export const BoxConfirmSenha = styled.div`
-
-`
-export const DivCargo = styled.div`
-
-`
-export const Cargo = styled.div`
-
-`
-export const BoxCargo = styled.div`
-
-
-`
-export const Botton = styled.div`
+export const DivCadastro = styled.div`
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: 3rem;
 
 `
