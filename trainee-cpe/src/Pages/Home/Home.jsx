@@ -1,7 +1,3 @@
-import { Container, Firstpart, ButtonEntrar, Title, SecondPart, Title2, ButtonCadastro } from "./Styles";
-import { DivHeader } from "../Cadastro/Styles";
-import { DivLogo } from "../Cadastro/Styles";
-import { Footer } from "antd/es/layout/layout";
 
 function Home() {
   return (
