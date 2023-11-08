@@ -41,7 +41,7 @@ export const ButtonEntrar = styled.div`
 export const Title = styled.div`
   color: #fff;
   white-space: nowrap;
-  padding: 200px;
+  padding: 250px;
   font-family: Montserrat;
   font-size: 20px;
   font-style: normal;
@@ -89,7 +89,7 @@ export const ButtonCadastro = styled.div`
 `;
 export const Title2 = styled.div`
   white-space: nowrap;
-  padding: 200px;
+  padding: 250px;
   color: #fff;
   font-family: Montserrat;
   font-size: 20px;
