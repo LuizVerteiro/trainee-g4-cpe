@@ -31,7 +31,7 @@ export const ButtonEntrar = styled.div`
   padding: 8px 8px 8px 8px;
   justify-content: center;
   align-items: center;
-  @media (max-width: 1200px) {
+  @media (max-width: 5000px) {
     width: 100%;
     height: auto;
     font-size: 40px;
@@ -47,7 +47,7 @@ export const Title = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  @media (max-width: 1200px) {
+  @media (max-width: 5000px) {
     font-size: 40px;
   }
 `;
@@ -80,7 +80,7 @@ export const ButtonCadastro = styled.div`
   padding: 8px 8px 8px 8px;
   justify-content: center;
   align-items: center;
-  @media (max-width: 1200px) {
+  @media (max-width: 5000px) {
     width: 100%;
     height: auto;
     font-size: 40px;
@@ -96,7 +96,7 @@ export const Title2 = styled.div`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  @media (max-width: 1200px) {
+  @media (max-width: 5000px) {
     font-size: 40px;
   }
 `;
