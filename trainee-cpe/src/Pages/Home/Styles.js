@@ -24,7 +24,7 @@ export const ButtonEntrar = styled.div`
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   text-align: center;
   padding: 2px;
-  font-size: 50px;
+  font-size: 4rem;
   display: flex;
   max-width: 300px;
   height: auto;
@@ -34,8 +34,11 @@ export const ButtonEntrar = styled.div`
   @media (max-width: 1200px) {
     width: 100%;
     height: auto;
-    font-size: 40px;
     padding: 10px 10px 10px 10px;
+  }
+  @media (max-width: 500px) {
+    font-size: 3rem;
+    width: 200px;
   }
 `;
 export const Title = styled.div`
@@ -43,12 +46,12 @@ export const Title = styled.div`
   white-space: nowrap;
   padding: 250px;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 4.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  @media (max-width: 1200px) {
-    font-size: 40px;
+  @media (max-width: 500px) {
+    font-size: 3rem;
   }
 `;
 export const Firstpart = styled.div`
@@ -73,9 +76,9 @@ export const ButtonCadastro = styled.div`
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
   text-align: center;
   padding: 2px;
-  font-size: 50px;
+  font-size: 4rem;
   display: flex;
-  max-width: 300px;
+  max-width: 500px;
   height: auto;
   padding: 8px 8px 8px 8px;
   justify-content: center;
@@ -83,8 +86,11 @@ export const ButtonCadastro = styled.div`
   @media (max-width: 1200px) {
     width: 100%;
     height: auto;
-    font-size: 40px;
     padding: 10px 10px 10px 10px;
+  }
+  @media (max-width: 500px) {
+    font-size: 3rem;
+    width: 200px;
   }
 `;
 export const Title2 = styled.div`
@@ -92,11 +98,11 @@ export const Title2 = styled.div`
   padding: 250px;
   color: #fff;
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 4.5rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  @media (max-width: 1200px) {
-    font-size: 40px;
+  @media (max-width: 500px) {
+    font-size: 3rem;
   }
 `;
