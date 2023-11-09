@@ -31,6 +31,7 @@ export const DivLogo = styled.div`
 export const DivOla = styled.div`
   display: flex;
   flex-direction: row;
+  margin-right: 2rem;
   height: auto;
   width: 100%;
   align-items: center;
@@ -54,6 +55,7 @@ export const Titulo = styled.h1`
   color: white;
   display: flex;
   text-align: center;
+  justify-content: center;
 `;
 
 export const Texto = styled.div`
@@ -71,8 +73,8 @@ export const Texto = styled.div`
 export const Linha = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   border-right: 1rem;
   width: 100%;
   height: auto;
