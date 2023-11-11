@@ -26,19 +26,23 @@ export const ButtonEntrar = styled.div`
   padding: 2px;
   font-size: 4rem;
   display: flex;
-  max-width: 300px;
+  width: 250px;
   height: auto;
   padding: 8px 8px 8px 8px;
   justify-content: center;
   align-items: center;
-  @media (max-width: 1200px) {
-    width: 100%;
-    height: auto;
-    padding: 10px 10px 10px 10px;
-  }
+  border-radius: 5rem;
   @media (max-width: 500px) {
     font-size: 3rem;
-    width: 200px;
+    width: 220px;
+  }
+  @media (max-width: 280px) {
+    font-size: 2rem;
+    width: 120px;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 `;
 export const Title = styled.div`
@@ -53,6 +57,10 @@ export const Title = styled.div`
   @media (max-width: 500px) {
     font-size: 3rem;
   }
+  @media (max-width: 280px) {
+    font-size: 2rem;
+    padding: 100px;
+  }
 `;
 export const Firstpart = styled.div`
   /* width: 50%; */
@@ -61,8 +69,6 @@ export const Firstpart = styled.div`
   display: flex;
   /* margin-right: 2%; */
   flex-direction: column;
-  @media (max-width: 1500px) {
-  }
 `;
 export const SecondPart = styled.div`
   justify-content: center;
@@ -78,19 +84,23 @@ export const ButtonCadastro = styled.div`
   padding: 2px;
   font-size: 4rem;
   display: flex;
-  max-width: 500px;
+  width: 420px;
   height: auto;
   padding: 8px 8px 8px 8px;
   justify-content: center;
   align-items: center;
-  @media (max-width: 1200px) {
-    width: 100%;
-    height: auto;
-    padding: 10px 10px 10px 10px;
-  }
+  border-radius: 5rem;
   @media (max-width: 500px) {
     font-size: 3rem;
-    width: 200px;
+    width: 220px;
+  }
+  @media (max-width: 280px) {
+    font-size: 2rem;
+    width: 170px;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 `;
 export const Title2 = styled.div`
@@ -104,5 +114,9 @@ export const Title2 = styled.div`
   line-height: normal;
   @media (max-width: 500px) {
     font-size: 3rem;
+  }
+  @media (max-width: 280px) {
+    font-size: 2.5rem;
+    padding: 100px;
   }
 `;
