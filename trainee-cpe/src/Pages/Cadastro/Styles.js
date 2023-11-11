@@ -32,6 +32,24 @@ export const SelectModal = styled.select`
     }
 `
 
+export const IconInput = styled.div`
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.01); 
+    }
+    .anticon {
+        position: absolute;
+        right: 0.7rem;
+        color: #7D7D7D;
+        cursor: pointer;
+    }
+`
+
+///////////////////////////////////////////////////////////////////////////////
+
 export const Containner = styled.div`
     display: flex;
     flex-direction: column;
@@ -118,21 +136,5 @@ export const Botton = styled.div`
     &:hover {
         transform: scale(1.1); 
     }
-`
-////////////////////////////////////ICONS//////////////////////////////////////
-
-export const IconInput = styled.div`
-    display: flex;
-    align-items: center;
-    position: relative;
-    transition: transform 0.2s ease-in-out;
-    &:hover {
-        transform: scale(1.01); 
-    }
-    .anticon {
-        position: absolute;
-        right: 0.7rem;
-        color: #7D7D7D;
-        cursor: pointer;
-    }
+    cursor: pointer;
 `
