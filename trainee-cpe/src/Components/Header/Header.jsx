@@ -1,20 +1,29 @@
-import { DivBackground, DivLogo, DivText } from "./Styles";
-import ImageLogo from "../../Assets/Logo.png"
+import {
+  DivBackground,
+  DivLogo,
+  DivText,
+  DivBottons,
+  DivEntrar,
+  DivCadastro,
+  DivContainner,
+} from "./Styles";
+import ImageLogo from "../../Assets/Logo.png";
 
-function Header(){
-
-    return(
-      <>
+export default function Header() {
+  return (
+    <>
       <DivBackground>
-        <DivLogo>
-        <img src={ImageLogo} alt="Logo" />
-        </DivLogo>
-        <DivText>
-        Assistec
-        </DivText>
+        <DivContainner>
+          <DivLogo>
+            <img src={ImageLogo} alt="Logo" />
+          </DivLogo>
+          <DivText>Assistec</DivText>
+        </DivContainner>
+        <DivBottons>
+          <DivEntrar>Entrar</DivEntrar>
+          <DivCadastro>Cadastro</DivCadastro>
+        </DivBottons>
       </DivBackground>
-      </>  
-    );
+    </>
+  );
 }
-
-export default Header;
