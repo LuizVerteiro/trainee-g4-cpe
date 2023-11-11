@@ -1,14 +1,14 @@
-import Routes from "./routes"
-import Header from "./Components/Header"
-import GlobalStyles from "./Styles/GlobalStyles"
+import Routes from "./routes";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import GlobalStyles from "./Styles/GlobalStyles";
 function App() {
   return (
     <div>
-      <GlobalStyles/>
+      <GlobalStyles />
       <Routes />
     </div>
-  )
+  );
 }
 
-export default App
-
+export default App;
