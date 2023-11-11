@@ -1,4 +1,3 @@
-import { DivHeader } from "../Cadastro/Styles";
 import {
   DivAvisos,
   DivLogo,
@@ -44,12 +43,6 @@ function Home_logada() {
   ];
   return (
     <Container>
-      <DivHeader>
-        <DivLogo>
-          <img src={ImageLogo} alt="Logo" />
-          <DivText>Assistec</DivText>
-        </DivLogo>
-      </DivHeader>
       <DivOla>
         <Titulo>Olá Taylor Swift!</Titulo>
         <Login> Login </Login>

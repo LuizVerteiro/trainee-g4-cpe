@@ -1,6 +1,12 @@
-import { Container, Firstpart, ButtonEntrar, Title, SecondPart, Title2, ButtonCadastro } from "./Styles";
-import { DivHeader } from "../Cadastro/Styles";
-import { DivLogo } from "../Cadastro/Styles";
+import {
+  Container,
+  Firstpart,
+  ButtonEntrar,
+  Title,
+  SecondPart,
+  Title2,
+  ButtonCadastro,
+} from "./Styles";
 
 function Home() {
   return (
