@@ -1,1 +1,1 @@
-export {default} 
+export { default as AppLayout } from "./AppLayout.jsx";
