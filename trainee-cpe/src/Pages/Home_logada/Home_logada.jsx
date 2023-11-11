@@ -73,7 +73,7 @@ function Home_logada() {
         </HeaderTabela>
         {seções.map(function (seção) {
           return (
-            <LinhaTabela>
+            <LinhaTabela key={seção.nome}>
               <Usuario>
                 <img href="" />
                 <NomeCargo>
