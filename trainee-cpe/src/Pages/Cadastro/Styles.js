@@ -60,6 +60,10 @@ export const Containner = styled.div`
     border: 1px solid white; 
     margin-top: 12rem;
     font-weight: 500;
+    @media (max-width: 600px){
+        
+        height: 32rem;
+    }
 `
 
 export const Title = styled.div`

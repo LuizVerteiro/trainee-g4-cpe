@@ -46,7 +46,6 @@ function Cadastro() {
                                 <option value="cargo2">Cargo B</option>
                                 <option value="cargo2">Cargo C</option>
                             </SelectModal>
-                            <LoadingOutlined />
                         </IconInput>
                     </DivCargo>
                     <AlinhaBotton>
