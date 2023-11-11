@@ -1,7 +1,7 @@
-import { Containner, Title, DivEmail, Email, DivNomeUser, NomeUser, DivSenha, Senha, DivConfirmSenha, ConfirmSenha, DivCargo, Cargo, Botton, Background, AlinhaBotton, InputModal, SelectModal } from "./Styles";
+import { Containner, Title, DivEmail, Email, DivNomeUser, NomeUser, DivSenha, Senha, DivConfirmSenha, ConfirmSenha, DivCargo, Cargo, Botton, Background, AlinhaBotton, InputModal, SelectModal, IconInput } from "./Styles";
 import Header from "../../Components/Header/Header";
+import { MailOutlined, LockOutlined, KeyOutlined, UserOutlined, LoadingOutlined } from '@ant-design/icons';
 
-import { FaBeer } from 'react-icons/fa';
 function Cadastro() {
 
     return (
@@ -12,28 +12,42 @@ function Cadastro() {
                     <Title>Realizar Cadastro</Title>
                     <DivEmail>
                         <Email> Email:</Email>
-                        <InputModal type="text" placeholder="exemplo@*****.com" />
+                        <IconInput>
+                            <InputModal type="text" placeholder="exemplo@*****.com" />
+                            <MailOutlined />
+                        </IconInput>
                     </DivEmail>
                     <DivNomeUser>
                         <NomeUser> Nome de Usuario:</NomeUser>
-                        <InputModal type="text" placeholder="Nome de usuário" />
+                        <IconInput>
+                            <InputModal type="text" placeholder="Nome de usuário" />
+                            <UserOutlined />
+                        </IconInput>
                     </DivNomeUser>
                     <DivSenha>
                         <Senha> Senha:</Senha>
-                        <InputModal type="password" placeholder="*****************" />
+                        <IconInput>
+                            <InputModal type="password" placeholder="*****************" />
+                            <KeyOutlined />
+                        </IconInput>
                     </DivSenha>
                     <DivConfirmSenha>
                         <ConfirmSenha> Confirme sua senha:</ConfirmSenha>
-                        <InputModal type="password" placeholder="*****************" 
-                        />
+                        <IconInput>
+                            <InputModal type="password" placeholder="*****************" />
+                            <LockOutlined />
+                        </IconInput>
                     </DivConfirmSenha>
                     <DivCargo>
                         <Cargo> Cargo:</Cargo>
-                        <SelectModal>
-                            <option value="cargo1">Cargo A</option>
-                            <option value="cargo2">Cargo B</option>
-                            <option value="cargo2">Cargo C</option>
-                        </SelectModal>
+                        <IconInput>
+                            <SelectModal>
+                                <option value="cargo1">Cargo A</option>
+                                <option value="cargo2">Cargo B</option>
+                                <option value="cargo2">Cargo C</option>
+                            </SelectModal>
+                            <LoadingOutlined />
+                        </IconInput>
                     </DivCargo>
                     <AlinhaBotton>
                         <Botton> Cadastrar</Botton>

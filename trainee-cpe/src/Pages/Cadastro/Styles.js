@@ -16,6 +16,7 @@ export const InputModal = styled.input`
     &:hover {
         transform: scale(1.02); 
     }
+    cursor: pointer;
 `
 
 export const SelectModal = styled.select`
@@ -120,4 +121,18 @@ export const Botton = styled.div`
 `
 ////////////////////////////////////ICONS//////////////////////////////////////
 
-///
+export const IconInput = styled.div`
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+        transform: scale(1.01); 
+    }
+    .anticon {
+        position: absolute;
+        right: 0.7rem;
+        color: #7D7D7D;
+        cursor: pointer;
+    }
+`

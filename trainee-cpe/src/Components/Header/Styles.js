@@ -24,6 +24,7 @@ export const DivLogo = styled.div`
     &:hover {
         transform: scale(1.1); 
     }
+    cursor: pointer;
 `
 export const DivText = styled.div`
     font-size: 2rem;
@@ -44,6 +45,7 @@ export const DivEntrar = styled.div`
     &:hover {
         transform: scale(1.1); 
     }
+    cursor: pointer;
 `
 export const DivCadastro = styled.div`
     border: 1px solid white;
@@ -54,4 +56,5 @@ export const DivCadastro = styled.div`
     &:hover {
         transform: scale(1.1); 
     }
+    cursor: pointer;
 `

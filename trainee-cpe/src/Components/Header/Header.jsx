@@ -7,18 +7,18 @@ export default function Header() {
     <>
       <DivBackground>
         <DivContainner>
-        <DivLogo>
-          <img src={ImageLogo} alt="Logo" />
-        </DivLogo>
-        <DivText>Assistec</DivText>
+          <DivLogo>
+            <img src={ImageLogo} alt="Logo" />
+          </DivLogo>
+          <DivText>Assistec</DivText>
         </DivContainner>
         <DivBottons>
-        <DivEntrar>
-          Entrar
-        </DivEntrar>
-        <DivCadastro>
-          Cadastro
-        </DivCadastro>
+          <DivEntrar>
+            Entrar
+          </DivEntrar>
+          <DivCadastro>
+            Cadastro
+          </DivCadastro>
         </DivBottons>
       </DivBackground>
     </>
