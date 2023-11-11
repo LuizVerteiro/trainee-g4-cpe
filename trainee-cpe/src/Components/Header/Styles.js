@@ -1,4 +1,8 @@
 import styled from "styled-components";
+export const DivBackground = styled.div`
+    position: fixed;
+    top:0;
+    left:0;
 
     display: flex;
     align-items: center;
@@ -7,6 +11,11 @@ import styled from "styled-components";
     width: 100vw;
     height: 11rem;
     background: linear-gradient(to bottom, #DE3100, black);
+`
+export const DivContainner = styled.div`
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
 `
 export const DivLogo = styled.div`
     width: 5rem;
