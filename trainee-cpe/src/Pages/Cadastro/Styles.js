@@ -64,7 +64,7 @@ export const Containner = styled.div`
   @media (max-width: 600px) {
     height: 32rem;
   }
-`;
+`; 
 
 export const Title = styled.div`
   font-size: 2rem;
