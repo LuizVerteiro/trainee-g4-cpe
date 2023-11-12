@@ -27,7 +27,7 @@ function Cadastro() {
           <DivNomeUser>
             <NomeUser> Novo nome:</NomeUser>
             <IconInput>
-              <InputModal type="text" placeholder="Nome de usuário" />
+              <InputModal type="text" placeholder="Novo nome de usuário" />
               <UserOutlined />
             </IconInput>
           </DivNomeUser>

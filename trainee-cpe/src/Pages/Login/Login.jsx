@@ -33,7 +33,7 @@ function Cadastro() {
             </IconInput>
           </DivEmail>
           <DivNomeUser>
-            <NomeUser> Nome de Usuario:</NomeUser>
+            <NomeUser> Nome de usuario:</NomeUser>
             <IconInput>
               <InputModal type="text" placeholder="Nome de usuário" />
               <UserOutlined />
