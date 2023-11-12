@@ -58,7 +58,8 @@ export const Containner = styled.div`
   height: 29rem;
   border-radius: 50px 0px;
   border: 1px solid white;
-  margin-top: 12rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   font-weight: 500;
   @media (max-width: 600px) {
     height: 32rem;
