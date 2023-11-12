@@ -20,8 +20,12 @@ export default function Header() {
           <DivText>Assistec</DivText>
         </DivContainner>
         <DivBottons>
-          <DivEntrar>Entrar</DivEntrar>
-          <DivCadastro>Cadastro</DivCadastro>
+        <DivEntrar to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
+          Entrar
+          </DivEntrar>
+        <DivCadastro to="/cadastro" style={{ textDecoration: 'none', color: 'inherit' }}>
+          Cadastro
+          </DivCadastro>
         </DivBottons>
       </DivBackground>
     </>
