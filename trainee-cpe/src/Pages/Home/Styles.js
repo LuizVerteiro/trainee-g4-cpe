@@ -6,7 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 80rem;
+  height: 120rem;
   color: white;
 `;
 
@@ -59,7 +59,10 @@ export const Title = styled.div`
   }
   @media (max-width: 280px) {
     font-size: 2rem;
-    padding: 100px;
+    padding: 90px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 `;
 export const Firstpart = styled.div`

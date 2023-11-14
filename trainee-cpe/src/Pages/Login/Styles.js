@@ -62,9 +62,10 @@ export const Containner = styled.div`
   margin-bottom: 4rem;
   font-weight: 500;
   @media (max-width: 600px) {
-    height: 25rem;
+    height: 30rem;
+    padding-top: 7rem;
   }
-`; 
+`;
 
 export const Title = styled.div`
   font-size: 2rem;

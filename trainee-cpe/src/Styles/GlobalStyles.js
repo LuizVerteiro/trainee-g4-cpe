@@ -11,7 +11,7 @@ html, body{
     color: white;
     font-family: "Montserrat";
     @media (max-width: 700px){
-        font-size: 11px
+        font-size: 11px;
     }
 }
 `;
