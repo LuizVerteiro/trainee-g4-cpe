@@ -84,36 +84,6 @@ export const Title = styled.div`
   padding-top: 1rem;
 `;
 
-export const DivEmail = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const Email = styled.div`
-  width: 10vw;
-`;
-
-export const DivNomeUser = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const NomeUser = styled.div`
-  width: 10vw;
-`;
-
-export const DivSenha = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const Senha = styled.div`
-  width: 10vw;
-`;
-
 export const AlinhaBotton = styled.div`
   display: flex;
   justify-content: center;
