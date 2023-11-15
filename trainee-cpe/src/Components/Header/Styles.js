@@ -1,8 +1,7 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
+
 export const DivBackground = styled.div`
-  /* position: fixed;
-  top: 0;
-  left: 0; */
 
   display: flex;
   align-items: center;
@@ -38,7 +37,8 @@ export const DivBottons = styled.div`
   flex-wrap: wrap;
   padding-right: 1rem;
 `;
-export const DivEntrar = styled.div`
+
+export const DivEntrar = styled(Link)`
   border: 0px;
   padding: 1rem;
   transition: transform 0.2s ease-in-out;
@@ -47,7 +47,7 @@ export const DivEntrar = styled.div`
   }
   cursor: pointer;
 `;
-export const DivCadastro = styled.div`
+export const DivCadastro = styled(Link)`
   border: 1px solid white;
   padding: 1rem;
   border-radius: 10px;

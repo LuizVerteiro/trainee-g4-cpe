@@ -1,16 +1,9 @@
+import { useState } from "react";
 import {
-  Containner,
   Title,
-  DivEmail,
-  Email,
-  DivNomeUser,
-  NomeUser,
-  DivSenha,
-  Senha,
-  DivConfirmSenha,
-  ConfirmSenha,
-  DivCargo,
-  Cargo,
+  Form,
+  Campo,
+  Label,
   Botton,
   Background,
   AlinhaBotton,
@@ -23,57 +16,83 @@ import {
   LockOutlined,
   KeyOutlined,
   UserOutlined,
-  LoadingOutlined,
 } from "@ant-design/icons";
 
 function Cadastro() {
+  const [email, setEmail] = useState("");
+  const [nome, setNome] = useState("");
+  const [senha, setSenha] = useState("");
+  const [confirm, setConfirm] = useState("");
+  const [cargo, setCargo] = useState("");
+  const [carregando, setCarregando] = useState(false)
+
+  const handleSubmit = async (e)=>{
+    e.preventDefault(); //para não atualizar a pag
+    try {
+      setCarregando(true);
+      const res =  await api.post("/cadastro", {email, nome, senha, confirm, cargo});
+      console.log(res.data);
+    } catch (error) {
+      console.error(erro);
+      alert(erro.message);
+    }finally{
+      setCarregando(false);
+    }
+  };
+
+  if(carregando) return(
+    <Background>
+      <h1>Carregando...</h1>
+    </Background>
+  )
+  
   return (
     <>
       <Background>
-        <Containner>
+        <Form onSubmit={handleSubmit}>
           <Title>Realizar Cadastro</Title>
-          <DivEmail>
-            <Email> Email:</Email>
+          <Campo>
+            <Label htmlFor="email"> Email:</Label>
             <IconInput>
-              <InputModal type="text" placeholder="exemplo@*****.com" />
+              <InputModal type="email" name="email" id="email" placeholder="exemplo@*****.com" required onChange={(e) => setEmail(e.target.value)} />
               <MailOutlined />
             </IconInput>
-          </DivEmail>
-          <DivNomeUser>
-            <NomeUser> Nome de Usuario:</NomeUser>
+          </Campo>
+          <Campo>
+            <Label htmlFor="nome"> Nome de usuario:</Label>
             <IconInput>
-              <InputModal type="text" placeholder="Nome de usuário" />
+              <InputModal type="text" name="nome" id="nome" placeholder="Nome de usuário" required onChange={(e) => setNome(e.target.value)}  />
               <UserOutlined />
             </IconInput>
-          </DivNomeUser>
-          <DivSenha>
-            <Senha> Senha:</Senha>
+          </Campo>
+          <Campo>
+            <Label> Senha:</Label>
             <IconInput>
-              <InputModal type="password" placeholder="*****************" />
+              <InputModal type="password" name="senha" id="senha" placeholder="*****************" required onChange={(e) => setSenha(e.target.value)}/>
               <KeyOutlined />
             </IconInput>
-          </DivSenha>
-          <DivConfirmSenha>
-            <ConfirmSenha> Confirme sua senha:</ConfirmSenha>
+          </Campo>
+          <Campo>
+            <Label> Confirme sua senha:</Label>
             <IconInput>
-              <InputModal type="password" placeholder="*****************" />
+              <InputModal type="password" name="confirm" id="confirm" placeholder="*****************" required onChange={(e) => setConfirm(e.target.value)} />
               <LockOutlined />
             </IconInput>
-          </DivConfirmSenha>
-          <DivCargo>
-            <Cargo> Cargo:</Cargo>
+          </Campo>
+          <Campo>
+            <Label> Cargo:</Label>
             <IconInput>
-              <SelectModal>
+              <SelectModal name="cargo" id="cargo" required onChange={(e) => setCargo(e.target.value)}>
                 <option value="cargo1">Cargo A</option>
                 <option value="cargo2">Cargo B</option>
                 <option value="cargo2">Cargo C</option>
               </SelectModal>
             </IconInput>
-          </DivCargo>
+          </Campo>
           <AlinhaBotton>
-            <Botton> Cadastrar</Botton>
+            <Botton type="submit"> Cadastrar</Botton>
           </AlinhaBotton>
-        </Containner>
+        </Form>
       </Background>
     </>
   );

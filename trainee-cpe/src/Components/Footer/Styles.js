@@ -8,6 +8,9 @@ export const DivBackground = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 280px) {
+    position: end;
+  }
 `;
 
 export const Texto = styled.div`

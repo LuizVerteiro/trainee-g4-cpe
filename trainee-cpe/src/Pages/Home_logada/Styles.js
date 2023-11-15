@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: space-between;
   height: 100%;
   color: white;
+  margin-bottom: 10rem;
 `;
 
 export const DivText = styled.div`
