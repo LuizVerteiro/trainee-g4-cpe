@@ -18,7 +18,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 
-function Cadastro() {
+function Editar() {
   return (
     <>
       <Background>
@@ -60,4 +60,4 @@ function Cadastro() {
   );
 }
 
-export default Cadastro;
+export default Editar;

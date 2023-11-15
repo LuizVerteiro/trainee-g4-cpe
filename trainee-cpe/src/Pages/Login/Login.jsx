@@ -19,7 +19,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 
-function Cadastro() {
+function Login() {
   return (
     <>
       <Background>
@@ -55,4 +55,4 @@ function Cadastro() {
   );
 }
 
-export default Cadastro;
+export default Login;
