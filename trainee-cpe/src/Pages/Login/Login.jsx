@@ -1,12 +1,9 @@
+import { useState } from "react";
 import {
-  Containner,
   Title,
-  DivEmail,
-  Email,
-  DivNomeUser,
-  NomeUser,
-  DivSenha,
-  Senha,
+  Campo,
+  Label,
+  Form,
   Botton,
   Background,
   AlinhaBotton,
@@ -20,36 +17,44 @@ import {
 } from "@ant-design/icons";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [nome, setNome] = useState("");
+  const [senha, setSenha] = useState("");
+
+  const handleSubmit = async (e)=>{
+    e.preventDefault(); //para não atualizar a pag
+    console.log(email, nome, senha);
+  };
   return (
     <>
       <Background>
-        <Containner>
+          <Form onSubmit={handleSubmit}>
           <Title>Realizar Login</Title>
-          <DivEmail>
-            <Email> Email:</Email>
+          <Campo>
+            <Label htmlFor="email"> Email:</Label>
             <IconInput>
-              <InputModal type="text" placeholder="exemplo@*****.com" />
+              <InputModal type="email" name="email" id="email" placeholder="exemplo@*****.com" required onChange={(e) => setEmail(e.target.value)} />
               <MailOutlined />
             </IconInput>
-          </DivEmail>
-          <DivNomeUser>
-            <NomeUser> Nome de usuario:</NomeUser>
+          </Campo>
+          <Campo>
+            <Label htmlFor="nome"> Nome de usuario:</Label>
             <IconInput>
-              <InputModal type="text" placeholder="Nome de usuário" />
+              <InputModal type="text" name="nome" id="nome" placeholder="Nome de usuário" required onChange={(e) => setNome(e.target.value)} />
               <UserOutlined />
             </IconInput>
-          </DivNomeUser>
-          <DivSenha>
-            <Senha> Senha:</Senha>
+          </Campo>
+          <Campo>
+            <Label htmlFor="senha"> Senha:</Label>
             <IconInput>
-              <InputModal type="password" placeholder="*****************" />
+              <InputModal type="password" name="senha" id="senha" placeholder="*****************" required onChange={(e) => setSenha(e.target.value)} />
               <KeyOutlined />
             </IconInput>
-          </DivSenha>
+          </Campo>
           <AlinhaBotton>
-            <Botton> Entrar</Botton>
+            <Botton type="submit"> Entrar</Botton>
           </AlinhaBotton>
-        </Containner>
+          </Form>
       </Background>
     </>
   );

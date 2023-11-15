@@ -5,6 +5,31 @@ export const Background = styled.div`
   justify-content: center;
 `;
 
+export const Form = styled.form`
+ display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80vw;
+  height: 22rem;
+  border-radius: 50px 0px;
+  border: 1px solid white;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  @media (max-width: 600px) {
+    height: 30rem;
+    padding-top: 7rem;
+  }
+`
+
+export const Label = styled.label`
+  width: 10vw;
+`
+export const Campo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`
 export const InputModal = styled.input`
   display: flex;
   background-color: black;
@@ -48,24 +73,9 @@ export const IconInput = styled.div`
   }
 `;
 
+
 ///////////////////////////////////////////////////////////////////////////////
 
-export const Containner = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 80vw;
-  height: 22rem;
-  border-radius: 50px 0px;
-  border: 1px solid white;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  font-weight: 500;
-  @media (max-width: 600px) {
-    height: 30rem;
-    padding-top: 7rem;
-  }
-`;
 
 export const Title = styled.div`
   font-size: 2rem;
@@ -109,7 +119,7 @@ export const AlinhaBotton = styled.div`
   justify-content: center;
 `;
 
-export const Botton = styled.div`
+export const Botton = styled.button`
   display: flex;
   width: 5rem;
   border: 1px solid white;
@@ -121,4 +131,6 @@ export const Botton = styled.div`
     transform: scale(1.1);
   }
   cursor: pointer;
+  background-color: transparent;
+  color: inherit;
 `;
