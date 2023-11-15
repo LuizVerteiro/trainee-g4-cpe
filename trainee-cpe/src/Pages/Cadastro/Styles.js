@@ -5,6 +5,32 @@ export const Background = styled.div`
   justify-content: center;
 `;
 
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80vw;
+  height: 29rem;
+  border-radius: 50px 0px;
+  border: 1px solid white;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  @media (max-width: 600px) {
+    height: 32rem;
+  }
+`; 
+
+export const Label = styled.label`
+  width: 10vw;
+`
+
+export const Campo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+`
+
 export const InputModal = styled.input`
   display: flex;
   background-color: black;
@@ -50,22 +76,6 @@ export const IconInput = styled.div`
 
 ///////////////////////////////////////////////////////////////////////////////
 
-export const Containner = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 80vw;
-  height: 29rem;
-  border-radius: 50px 0px;
-  border: 1px solid white;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  font-weight: 500;
-  @media (max-width: 600px) {
-    height: 32rem;
-  }
-`; 
-
 export const Title = styled.div`
   font-size: 2rem;
   display: flex;
@@ -73,62 +83,12 @@ export const Title = styled.div`
   padding-top: 1rem;
 `;
 
-export const DivEmail = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const Email = styled.div`
-  width: 10vw;
-`;
-
-export const DivNomeUser = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const NomeUser = styled.div`
-  width: 10vw;
-`;
-
-export const DivSenha = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const Senha = styled.div`
-  width: 10vw;
-`;
-
-export const DivConfirmSenha = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const ConfirmSenha = styled.div`
-  width: 10vw;
-`;
-
-export const DivCargo = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-`;
-
-export const Cargo = styled.div`
-  width: 10vw;
-`;
-
 export const AlinhaBotton = styled.div`
   display: flex;
   justify-content: center;
 `;
 
-export const Botton = styled.div`
+export const Botton = styled.button`
   display: flex;
   width: 5rem;
   border: 1px solid white;
@@ -140,4 +100,10 @@ export const Botton = styled.div`
     transform: scale(1.1);
   }
   cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  @media (max-width: 800px) {
+    font-size: 10px;
+    padding-bottom: 0.5rem;
+  }
 `;

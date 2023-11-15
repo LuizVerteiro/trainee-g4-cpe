@@ -25,11 +25,13 @@ export const Form = styled.form`
 export const Label = styled.label`
   width: 10vw;
 `
+
 export const Campo = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 `
+
 export const InputModal = styled.input`
   display: flex;
   background-color: black;
@@ -42,19 +44,6 @@ export const InputModal = styled.input`
     transform: scale(1.02);
   }
   cursor: pointer;
-`;
-
-export const SelectModal = styled.select`
-  display: flex;
-  background-color: black;
-  color: #7d7d7d;
-  width: 45.6vw;
-  border: 1px solid white;
-  height: 1.5rem;
-  transition: transform 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.02);
-  }
 `;
 
 export const IconInput = styled.div`
