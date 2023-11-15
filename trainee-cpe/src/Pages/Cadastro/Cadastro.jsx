@@ -24,11 +24,28 @@ function Cadastro() {
   const [senha, setSenha] = useState("");
   const [confirm, setConfirm] = useState("");
   const [cargo, setCargo] = useState("");
+  const [carregando, setCarregando] = useState(false)
 
   const handleSubmit = async (e)=>{
     e.preventDefault(); //para não atualizar a pag
-    console.log(email, nome, senha, confirm, cargo);
+    try {
+      setCarregando(true);
+      const res =  await api.post("/cadastro", {email, nome, senha, confirm, cargo});
+      console.log(res.data);
+    } catch (error) {
+      console.error(erro);
+      alert(erro.message);
+    }finally{
+      setCarregando(false);
+    }
   };
+
+  if(carregando) return(
+    <Background>
+      <h1>Carregando...</h1>
+    </Background>
+  )
+  
   return (
     <>
       <Background>

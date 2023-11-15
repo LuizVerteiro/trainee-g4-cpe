@@ -20,11 +20,29 @@ function Login() {
   const [email, setEmail] = useState("");
   const [nome, setNome] = useState("");
   const [senha, setSenha] = useState("");
+  const [carregando, setCarregando] = useState(false)
 
   const handleSubmit = async (e)=>{
     e.preventDefault(); //para não atualizar a pag
-    console.log(email, nome, senha);
+
+    try {
+      setCarregando(true);
+      const res =  await api.post("/login", {email, nome, senha});
+      console.log(res.data);
+    } catch (error) {
+      console.error(erro);
+      alert(erro.message);
+    }finally{
+      setCarregando(false);
+    }
   };
+
+  if(carregando) return(
+    <Background>
+      <h1>Carregando...</h1>
+    </Background>
+  )
+
   return (
     <>
       <Background>

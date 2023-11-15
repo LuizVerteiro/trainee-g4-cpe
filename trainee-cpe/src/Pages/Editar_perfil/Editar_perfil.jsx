@@ -19,11 +19,28 @@ function Editar() {
   const [nome, setNome] = useState("");
   const [departamento, setDepartamento] = useState("");
   const [cargo, setCargo] = useState("");
+  const [carregando, setCarregando] = useState(false)
 
   const handleSubmit = async (e)=>{
     e.preventDefault(); //para não atualizar a pag
-    console.log(nome, departamento, cargo);
+    try {
+      setCarregando(true);
+      const res =  await api.post("/editar", {nome, departamento, cargo});
+      console.log(res.data);
+    } catch (error) {
+      console.error(erro);
+      alert(erro.message);
+    }finally{
+      setCarregando(false);
+    }
   };
+
+  if(carregando) return(
+    <Background>
+      <h1>Carregando...</h1>
+    </Background>
+  )
+  
   return (
     <>
       <Background>
