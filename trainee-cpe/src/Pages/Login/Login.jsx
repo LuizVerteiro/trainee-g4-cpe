@@ -27,12 +27,13 @@ function Login() {
     e.preventDefault(); //para não atualizar a pag
 
     try {
+      //console.log({email, nome, senha});
       setCarregando(true);
       const res = await api.post("/login", { email, nome, senha });
       const { token } = res.data;
 
       setToken(token);
-      navigate("/");
+      navigate("/logada");
     } catch (error) {
       console.error(error);
       // alert(error.response.data.message);

@@ -9,18 +9,17 @@ import {
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 import useAuthStore from "../../stores/auth";
-import {Link, useNavigate} from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header() {
-  const usuario = useAuthStore((state) => state.usuario); 
+  const usuario = useAuthStore((state) => state.usuario);
   const clearAuth = useAuthStore((state) => state.clearAuth);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const logout = () =>{
-
-    clearAuth()
-    navigate("/login")
-  }
+  const logout = () => {
+    clearAuth();
+    navigate("/login");
+  };
   return (
     <>
       <DivBackground>
@@ -30,19 +29,34 @@ export default function Header() {
           </DivLogo>
           <DivText>Assistec</DivText>
         </DivContainner>
-        <DivBottons>
-        <DivEntrar to="/login" style={{ textDecoration: 'none', color: 'inherit' }}>
-          Entrar
-          </DivEntrar>
-        <DivCadastro to="/cadastro" style={{ textDecoration: 'none', color: 'inherit' }}>
-          Cadastro
-          </DivCadastro>
-        </DivBottons>
 
-        {!!usuario && <>
+        {/* {!!usuario && <>
           <h2>Seja bem vindo {usuario.nome}</h2>
           <button type="button" onClick={logout}>Deslogar</button>
-        </>} 
+        </>}  */}
+        {!!usuario ? (
+          <>
+            <h2>Seja bem vindo {usuario.nome}</h2>
+            <button type="button" onClick={logout}>
+              Deslogar
+            </button>
+          </>
+        ) : (
+          <DivBottons>
+            <DivEntrar
+              to="/login"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              Entrar
+            </DivEntrar>
+            <DivCadastro
+              to="/cadastro"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              Cadastro
+            </DivCadastro>
+          </DivBottons>
+        )}
       </DivBackground>
     </>
   );
