@@ -16,6 +16,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import useAuthStore from "../../stores/auth";
+import {useNavigate} from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -23,7 +24,7 @@ function Login() {
   const [senha, setSenha] = useState("");
   const [carregando, setCarregando] = useState(false);
   const setToken = useAuthStore((state) => state.setToken);
-  const bavigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e)=>{
     e.preventDefault(); //para não atualizar a pag
