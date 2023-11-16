@@ -11,36 +11,40 @@ import {
   SelectModal,
   IconInput,
 } from "./Styles";
-import {
-  UserOutlined,
-} from "@ant-design/icons"; 
+import { UserOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 
 function Editar() {
+  const navigate = useNavigate();
   const [nome, setNome] = useState("");
   const [departamento, setDepartamento] = useState("");
   const [cargo, setCargo] = useState("");
-  const [carregando, setCarregando] = useState(false)
+  const [carregando, setCarregando] = useState(false);
 
-  const handleSubmit = async (e)=>{
+  const handleSubmit = async (e) => {
     e.preventDefault(); //para não atualizar a pag
+
+    alert("Editado com sucesso!");
+
     try {
       setCarregando(true);
-      const res =  await api.post("/editar", {nome, departamento, cargo});
+      const res = await api.post("/editar", { nome, departamento, cargo });
       console.log(res.data);
     } catch (error) {
       console.error(erro);
       alert(erro.message);
-    }finally{
+    } finally {
       setCarregando(false);
     }
   };
 
-  if(carregando) return(
-    <Background>
-      <h1>Carregando...</h1>
-    </Background>
-  )
-  
+  if (carregando)
+    return (
+      <Background>
+        <h1>Carregando...</h1>
+      </Background>
+    );
+
   return (
     <>
       <Background>
@@ -49,7 +53,14 @@ function Editar() {
           <Campo>
             <Label htmlFor="text"> Novo nome:</Label>
             <IconInput>
-              <InputModal type="text" name="nome" id="nome" placeholder="Novo Nome" required onChange={(e) => setNome(e.target.value)}/>
+              <InputModal
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Novo Nome"
+                required
+                onChange={(e) => setNome(e.target.value)}
+              />
               <UserOutlined />
             </IconInput>
           </Campo>
@@ -57,7 +68,11 @@ function Editar() {
             <Label> Novo departamento:</Label>
             <IconInput>
               <SelectModal
-              name="departamento" id="departamento" required onChange={(e) => setDepartamento(e.target.value)}>
+                name="departamento"
+                id="departamento"
+                required
+                onChange={(e) => setDepartamento(e.target.value)}
+              >
                 <option value="departamento1">Departamento A</option>
                 <option value="departamento2">Departamento B</option>
                 <option value="departamento3">Departamento C</option>
@@ -67,7 +82,12 @@ function Editar() {
           <Campo>
             <Label> Cargo:</Label>
             <IconInput>
-              <SelectModal name="cargo" id="cargo" required onChange={(e) => setCargo(e.target.value)} >
+              <SelectModal
+                name="cargo"
+                id="cargo"
+                required
+                onChange={(e) => setCargo(e.target.value)}
+              >
                 <option value="cargo1">Cargo A</option>
                 <option value="cargo2">Cargo B</option>
                 <option value="cargo2">Cargo C</option>
