@@ -32,6 +32,11 @@ export const ButtonEntrar = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 5rem;
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+  cursor: pointer;
   @media (max-width: 500px) {
     font-size: 3rem;
     width: 220px;
@@ -93,6 +98,11 @@ export const ButtonCadastro = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 5rem;
+  transition: transform 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+  cursor: pointer;
   @media (max-width: 500px) {
     font-size: 3rem;
     width: 220px;
