@@ -24,8 +24,10 @@ import {
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 import { LogoutOutlined } from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 
 function Home_logada() {
+  const navigate = useNavigate();
   const seções = [
     {
       nome: "Mateus",
@@ -33,7 +35,6 @@ function Home_logada() {
       atividade: "Monitoria",
       tempoAtivo: "01:08",
     },
-
     {
       nome: "Isabel",
       cargo: "Atendimento",

@@ -10,13 +10,10 @@ import {
   InputModal,
   IconInput,
 } from "./Styles";
-import {
-  MailOutlined,
-  KeyOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+import { MailOutlined, KeyOutlined, UserOutlined } from "@ant-design/icons";
 import useAuthStore from "../../stores/auth";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import api from "../../Services/api";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -26,60 +23,82 @@ function Login() {
   const setToken = useAuthStore((state) => state.setToken);
   const navigate = useNavigate();
 
-  const handleSubmit = async (e)=>{
+  const handleSubmit = async (e) => {
     e.preventDefault(); //para não atualizar a pag
 
     try {
       setCarregando(true);
-      const res =  await api.post("/login", {email, nome, senha});
-      const {token} = res.data;
+      const res = await api.post("/login", { email, nome, senha });
+      const { token } = res.data;
 
       setToken(token);
       navigate("/");
     } catch (error) {
-      console.error(erro);
-      alert(erro.response.data.message);
-    }finally{
+      console.error(error);
+      // alert(error.response.data.message);
+    } finally {
       setCarregando(false);
     }
   };
 
-  if(carregando) return(
-    <Background>
-      <h1>Carregando...</h1>
-    </Background>
-  )
+  if (carregando)
+    return (
+      <Background>
+        <h1>Carregando...</h1>
+      </Background>
+    );
 
   return (
     <>
       <Background>
-          <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit}>
           <Title>Realizar Login</Title>
           <Campo>
             <Label htmlFor="email"> Email:</Label>
             <IconInput>
-              <InputModal type="email" name="email" id="email" placeholder="exemplo@*****.com" required onChange={(e) => setEmail(e.target.value)} />
+              <InputModal
+                type="email"
+                name="email"
+                id="email"
+                placeholder="exemplo@*****.com"
+                required
+                onChange={(e) => setEmail(e.target.value)}
+              />
               <MailOutlined />
             </IconInput>
           </Campo>
           <Campo>
             <Label htmlFor="nome"> Nome de usuario:</Label>
             <IconInput>
-              <InputModal type="text" name="nome" id="nome" placeholder="Nome de usuário" required onChange={(e) => setNome(e.target.value)} />
+              <InputModal
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Nome de usuário"
+                required
+                onChange={(e) => setNome(e.target.value)}
+              />
               <UserOutlined />
             </IconInput>
           </Campo>
           <Campo>
             <Label htmlFor="senha"> Senha:</Label>
             <IconInput>
-              <InputModal type="password" name="senha" id="senha" placeholder="*****************" required onChange={(e) => setSenha(e.target.value)} />
+              <InputModal
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="*****************"
+                required
+                onChange={(e) => setSenha(e.target.value)}
+              />
               <KeyOutlined />
             </IconInput>
           </Campo>
           <AlinhaBotton>
             <Botton type="submit"> Entrar</Botton>
           </AlinhaBotton>
-          </Form>
+        </Form>
       </Background>
     </>
   );
