@@ -8,8 +8,19 @@ import {
   DivContainner,
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
+import useAuthStore from "../../stores/auth";
+import {Link, useNavigate} from "react-router-dom";
 
 export default function Header() {
+  const usuario = useAuthStore((state) => state.usuario); 
+  const clearAuth = useAuthStore((state) => state.clearAuth);
+  const navigate = useNavigate()
+
+  const logout = () =>{
+
+    clearAuth()
+    navigate("/login")
+  }
   return (
     <>
       <DivBackground>
@@ -27,6 +38,11 @@ export default function Header() {
           Cadastro
           </DivCadastro>
         </DivBottons>
+
+        {!!usuario && <>
+          <h2>Seja bem vindo {usuario.nome}</h2>
+          <button type="button" onClick={logout}>Deslogar</button>
+        </>} 
       </DivBackground>
     </>
   );

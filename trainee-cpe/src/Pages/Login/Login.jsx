@@ -15,12 +15,15 @@ import {
   KeyOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import useAuthStore from "../../stores/auth";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [nome, setNome] = useState("");
   const [senha, setSenha] = useState("");
-  const [carregando, setCarregando] = useState(false)
+  const [carregando, setCarregando] = useState(false);
+  const setToken = useAuthStore((state) => state.setToken);
+  const bavigate = useNavigate();
 
   const handleSubmit = async (e)=>{
     e.preventDefault(); //para não atualizar a pag
@@ -28,10 +31,13 @@ function Login() {
     try {
       setCarregando(true);
       const res =  await api.post("/login", {email, nome, senha});
-      console.log(res.data);
+      const {token} = res.data;
+
+      setToken(token);
+      navigate("/");
     } catch (error) {
       console.error(erro);
-      alert(erro.message);
+      alert(erro.response.data.message);
     }finally{
       setCarregando(false);
     }
