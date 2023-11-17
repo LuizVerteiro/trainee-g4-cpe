@@ -18,6 +18,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import api from "../../Services/api";
+import { useNavigate } from "react-router-dom";
 
 function Cadastro() {
   const [email, setEmail] = useState("");
@@ -26,6 +27,7 @@ function Cadastro() {
   const [confirm, setConfirm] = useState("");
   const [cargo, setCargo] = useState("");
   const [carregando, setCarregando] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault(); //para não atualizar a pag
@@ -38,9 +40,11 @@ function Cadastro() {
         confirm,
         cargo,
       });
-      console.log(res.data);
+      // console.log(res.data);
+      navigate("/login");
     } catch (error) {
-      console.error(error);
+      console.error("Cadastro invalido!");
+      alert("Cadastro invalido");
     } finally {
       setCarregando(false);
     }
