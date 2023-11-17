@@ -6,6 +6,7 @@ import {
   DivEntrar,
   DivCadastro,
   DivContainner,
+  DivDeslogar,
 } from "./Styles";
 import ImageLogo from "../../Assets/Logo.png";
 import useAuthStore from "../../stores/auth";
@@ -37,9 +38,9 @@ export default function Header() {
         {!!usuario ? (
           <>
             <h2>Seja bem vindo {usuario.nome}</h2>
-            <button type="button" onClick={logout}>
+            <DivDeslogar type="button" onClick={logout}>
               Deslogar
-            </button>
+            </DivDeslogar>
           </>
         ) : (
           <DivBottons>

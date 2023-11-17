@@ -45,7 +45,6 @@ function Home_logada() {
   return (
     <Container>
       <DivOla>
-        <Titulo>Olá Taylor Swift!</Titulo>
         <Login> Login </Login>
       </DivOla>
 
